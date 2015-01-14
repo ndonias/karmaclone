@@ -1,16 +1,15 @@
-.introduction{
-    backgorund-image: url('images/first-background.jpg');
-    background-position: center botttom;
-    bacground-repeat: no-repeat;
-    bacground-size: cover;
-    height: 45.938rem;
+.top-navigation{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom:1px solid #DDD;
+    z-index: 9999;
+    display:block;
 }
-.big-button {
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
+.top-navigation>.content{
+    width: 970px;
+    height:70px;
+    margin: 0 auto;
 }
 .top-navigation .links {
     float: right;
@@ -18,6 +17,7 @@
     color: #838994;
     font-size: 16px;
     margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li {
     display: inline-block;
@@ -31,3 +31,219 @@
     cursor: pointer;
     color: #333333;
 }
+
+.introduction{
+    background-image: url('images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto
+}
+.introduction .content{
+    width: 60rem;
+}
+
+.introduction h1{
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+    color: white;
+    height:70px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border:0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    overflow: auto
+}
+.introduction h3{
+    margin-top: 1.25px;
+    font-size: 1.563rem;
+    color: white;
+    width: 970px;
+    height:70px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+}
+div{
+    display: block;
+}
+.cases{
+    background-color: #fff;
+    overflow:hidden;
+    padding-bottom:5rem;
+    display: inline;
+}
+.cases .content{
+    margin-top: 7.875rem;
+    color:#1d1e21;
+    text-align: center;
+}
+.cases h2{
+    display: block;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.cases .devices>li{
+    width: 33.3333333%;
+    float:left;
+}
+
+.cases .devices h3{
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+
+.cases .devices{
+    width: 33.3333333%;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.social{
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align:center;
+}
+.content{
+    width: 60rem;
+    padding:0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+.social hr{
+    border:0;
+    border-top: 1px solid #eaebec;
+    margin:1.313rem 0;
+}
+h5{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box;
+}
+
+ul{
+    list-style: none;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.social .icons>li{
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .twitter{
+    color: #55acee;
+}
+.fa-twitter:before{
+    content:"\f099";
+}
+.fa-facebook:before {
+    content: "\f09a";
+}
+.fa-instagram:before{
+    content: "\f16d";
+}
+.social .facebook{
+    color: #4c66a4;
+}
+.social .instagram{
+    color: #3f729b;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+ol, ul {
+    list-style: none;
+}
+/* End of Reset */
+/* Start of Custom Styles */
